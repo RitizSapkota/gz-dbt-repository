@@ -1,0 +1,11 @@
+
+sources:
+  - name: gz_raw_data
+    description: "Source dataset containing raw data tables"
+    tables:
+      - name: raw_gz_sales
+        description: "Table containing sales data"
+      - name: raw_gz_product
+        description: "Table containing product data"
+      - name: raw_gz_ship
+        description: "Table containing shipping data"
