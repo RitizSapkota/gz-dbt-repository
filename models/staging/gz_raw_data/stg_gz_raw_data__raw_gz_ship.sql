@@ -4,7 +4,7 @@
 
   source as (
 
-      select * from {{ source('raw', 'ship') }}
+      select * from {{ source('gz_raw_data', 'raw_gz_ship') }}
 
   ),
 
