@@ -1,20 +1,21 @@
-with 
+  -- stg_raw__product.sql
 
-source as (
+  with
 
-    select * from {{ source('gz_raw_data', 'raw_gz_product') }}
+  source as (
 
-),
+      select * from {{ source('raw', 'product') }}
 
-renamed as (
+  ),
 
-    select
-        products_id,
-        purchse_price as purchase_price,
-        cast(purchse_price as FLOAT64) as purchase_price
+  renamed as (
 
-    from source
+      select
+          products_id,
+          CAST(purchse_price as FLOAT64) as purchase_price
 
-)
+      from source
 
-select * from renamed
+  )
+
+  select * from renamed
