@@ -28,3 +28,15 @@
              description: Primary key
            - name: purchase_price
              description: the purchase price of the product
+
+ # schema.yml
+
+ - name: product
+   identifier: raw_gz_product
+   description: products of Greenweez
+   columns:
+   - name: products_id
+     description: Primary key
+     tests:
+       - unique
+       - not_null
