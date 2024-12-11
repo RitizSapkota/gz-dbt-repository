@@ -9,3 +9,4 @@ sources:
         description: "Table containing product data"
       - name: raw_gz_ship
         description: "Table containing shipping data"
+
