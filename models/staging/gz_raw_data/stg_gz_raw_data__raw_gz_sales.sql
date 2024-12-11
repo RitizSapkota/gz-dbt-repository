@@ -20,3 +20,16 @@ renamed as (
 )
 
 select * from renamed
+
+version: 2
+
+ sources:
+   - name: gz_raw_data
+     schema: gz_raw_data
+     tables:
+       - name: raw_gz_sales
+         identifier: raw_gz_sales
+         description: sales of Greenweez / we have on row per product_id found in each orders_id
+         columns:
+           - name: date_date
+             description: date of purchase
